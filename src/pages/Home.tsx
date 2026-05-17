@@ -9,7 +9,7 @@ export default function Home() {
 
   const handleModeSelect = (mode: 'quick' | 'detailed') => {
     setMode(mode);
-    navigate('/quiz');
+    navigate('#/quiz');
   };
 
   const titleChars = '你最像崩铁里的哪个角色？'.split('');
@@ -117,7 +117,7 @@ export default function Home() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.4, duration: 0.5 }}
-        onClick={() => navigate('/characters')}
+        onClick={() => navigate('#/characters')}
         className="text-white/40 hover:text-white/70 text-sm transition-colors flex items-center gap-2"
       >
         <Sparkles className="w-4 h-4" />

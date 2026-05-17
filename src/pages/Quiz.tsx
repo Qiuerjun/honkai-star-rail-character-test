@@ -25,7 +25,7 @@ export default function Quiz() {
 
   useEffect(() => {
     if (!mode) {
-      navigate('/');
+      navigate('#/');
     }
   }, [mode, navigate]);
 
@@ -58,7 +58,7 @@ export default function Quiz() {
           matchPercent: matches[0].percent,
           similarMatches: matches.slice(1),
         });
-        navigate('/result');
+        navigate('#/result');
       }
     }, 600);
   };

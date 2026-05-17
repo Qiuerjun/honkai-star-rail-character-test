@@ -22,7 +22,7 @@ export default function Result() {
 
   useEffect(() => {
     if (!result) {
-      navigate('/');
+      navigate('#/');
     }
   }, [result, navigate]);
 
@@ -119,7 +119,7 @@ export default function Result() {
 
   const handleRestart = () => {
     reset();
-    navigate('/');
+    navigate('#/');
   };
 
   const handleShare = () => {
@@ -322,7 +322,7 @@ export default function Result() {
             分享结果
           </button>
           <button
-            onClick={() => navigate('/characters')}
+            onClick={() => navigate('#/characters')}
             className="flex items-center justify-center gap-2 px-6 py-3 bg-white/10 hover:bg-white/20 text-white rounded-xl transition-colors border border-white/10"
           >
             <Users className="w-4 h-4" />
